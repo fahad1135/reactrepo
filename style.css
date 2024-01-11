@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* header section start  */
+.header-section .nav a {
+  color: rgb(247, 245, 245);
+  text-decoration: none;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+/* header section end  */
+.main-section .about-section .about-heading h2 {
+  font-family: sans-serif;
+}
+.main-section .about-section .about-heading p {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.main-section .experienc-section .experienc-heading h2 {
+  font-family: sans-serif;
+}
+.main-section .aexperienc-section .experienc-heading p {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.main-section .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-section .sidebar .contact-info {
+  color: aliceblue;
+}
+.main-section .sidebar-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.main-section .skill-section .skills h1 {
+  font-family: sans-serif;
+  font-size: 35px;
+}
+.main-section .skill-section .skills p {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* footer section START  */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.footer .fa-brands {
+  font-size: 30px;
+  color: aliceblue;
+  margin-right: 12px;
+}
+/* footer section end  */
+
+@media (max-width: 992px) {
+  .main-section .about-section .about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-section .experienc-section .experienc-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
