@@ -37,10 +37,10 @@ nav .nav-link a {
 }
 
 .main-section .left-div {
-  width: 70%;
+  width: 75%;
 }
 .main-section .right-div {
-  width: 30%;
+  width: 25%;
   border: 2px solid gray;
   border-radius: 4px;
   box-shadow: 5px 5px 5px rgba(238, 5, 5, 0.05);
