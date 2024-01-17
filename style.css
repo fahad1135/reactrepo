@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@ body {
 }
 
 nav {
-  background: rgb(226, 10, 143);
+  background-color: rgb(226, 10, 143);
   padding: 8px;
   margin: 8px;
   border-radius: 4px;
@@ -20,20 +22,22 @@ nav {
   align-items: center;
 }
 nav .nav-name a {
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: "Pacifico", cursive;
+
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
+  height: 120px;
 }
 nav .nav-link a {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
-  font-weight: bold;
+
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
-  font-family: sans-serif;
 }
 .main-section {
   display: flex;
@@ -57,13 +61,15 @@ nav .nav-link a {
   border-radius: 4px;
 }
 .main-section .left-div .about h1 {
-  font-family: sans-serif;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  font-style: italic;
   font-size: large;
 }
 .main-section .left-div .about p {
   font-size: 16px;
   margin-top: 12px;
-  font-family: sans-serif;
+  font-family: "Pacifico", cursive;
 }
 
 .main-section .left-div .exp {
@@ -75,7 +81,7 @@ nav .nav-link a {
 }
 
 .main-section .left-div .exp h1 {
-  font-family: sans-serif;
+  font-family: "Pacifico", cursive;
   font-size: large;
 }
 
@@ -85,17 +91,22 @@ nav .nav-link a {
   align-items: center;
 }
 .main-section .right-div .side .sidebar-img img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 12px;
+  object-fit: cover;
 }
 
 .main-section .right-div .side .content {
   text-align: center;
 }
 .main-section .right-div .side .content h1 {
+  font-family: "Pacifico", cursive;
   font-size: 24px;
 }
 .main-section .right-div .side .content p {
+  font-family: "Pacifico", cursive;
   font-size: 16px;
 }
 .main-section .right-div .side .skill-section {
@@ -103,6 +114,7 @@ nav .nav-link a {
   margin-top: 12px;
 }
 .main-section .right-div .side .skill-section h1 {
+  font-family: "Pacifico", cursive;
   font-size: 26px;
 }
 .main-section .right-div .side .skill-section ul {
@@ -113,35 +125,34 @@ nav .nav-link a {
   margin-left: 57px;
 }
 .main-section .right-div .side .skill-section ul li {
-  font-size: 16px;
+  font-size: 12px;
   margin-top: 12px;
-  font-family: sans-serif;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: 900;
 }
 
 .footer {
-  background-color: bisque;
-  margin: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 
-  height: auto;
-  background: rgb(226, 10, 143);
+  background-color: rgb(226, 10, 143);
   padding: 2px;
   border-radius: 4px;
 }
+.footer-link {
+  display: flex;
 
-.footer a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
 }
+
 .footer .fa-brands {
   font-size: 20px;
   color: rgb(255, 255, 255);
-  margin-right: 12px;
+  color: black;
 }
 
 @media (max-width: 992px) {
