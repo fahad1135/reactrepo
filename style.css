@@ -67,7 +67,7 @@ nav .nav-link a {
   border: 2px solid gray;
   border-radius: 4px;
   margin-top: 12px;
-  height: 340px;
+  height: 280px;
 }
 
 .main-section .left-div .exp h1 {
@@ -124,7 +124,7 @@ nav .nav-link a {
 
   height: auto;
   background: rgb(226, 10, 143);
-  padding: 4px;
+  padding: 2px;
   border-radius: 4px;
 }
 
@@ -135,7 +135,7 @@ nav .nav-link a {
   font-family: sans-serif;
 }
 .footer .fa-brands {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   margin-right: 12px;
 }
