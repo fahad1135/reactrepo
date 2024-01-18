@@ -45,7 +45,7 @@ nav .nav-link a {
   color: black;
   text-align: center;
 }
-#signupForm label {
+#signupForm .control-feild label {
   font-size: 16px;
   font-weight: 600;
 }
@@ -58,28 +58,17 @@ nav .nav-link a {
   border-radius: 4px;
   background-color: rgb(41, 57, 194);
 }
-#signupForm {
+#signupForm .control-feild {
   display: flex;
 
   flex-direction: column;
 }
-#signupForm input {
+#signupForm .control-feild input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
   padding: 10px;
 }
-#signupForm input:focus {
+#signupForm .control-feild input:focus {
   outline: 0;
 }
-/* #form.success input {
-  border-color: rgb(54, 150, 54);
-}
-#form.error input {
-  border-color: red;
-}
-.input-contro .error {
-  color: #ff3860;
-  font-size: 9px;
-  height: 13px;
-} */
