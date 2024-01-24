@@ -16,8 +16,8 @@ function formValidation() {
   emailError.innerHTML = "";
   passwordError.innerHTML = "";
   let isValid = true;
-  if (name.value.trim() === "") {
-    displayError("Name is Required", nameError, name);
+  if (!isNameValid(name.value.trim())) {
+    displayError("Name is Required(Please use letters only)", nameError, name);
 
     isValid = false;
   }
@@ -43,8 +43,12 @@ function formValidation() {
     clearErrorStyling();
   }
 }
+function isNameValid(name) {
+  const nameRegex = /^[a-zA-Z ]+$/;
+  return nameRegex.test(name);
+}
 function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[a-zA-Z]+\d+@/;
   return emailRegex.test(email);
 }
 
