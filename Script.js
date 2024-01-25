@@ -23,7 +23,7 @@ function formValidation() {
   }
   if (!isValidEmail(email.value.trim())) {
     displayError(
-      "Email is required and must contain a '@' sign.",
+      "Email is required and must contain at least one or more digit and '@' sign.",
       emailError,
       email
     );
