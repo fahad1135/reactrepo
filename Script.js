@@ -16,12 +16,18 @@ function formValidation() {
   emailError.innerHTML = "";
   passwordError.innerHTML = "";
   let isValid = true;
-  if (!isNameValid(name.value.trim())) {
-    displayError("Name is Required(Please use letters only)", nameError, name);
+  if (name.value.trim() === "") {
+    displayError("Name is Required", nameError, name);
+    isValid = false;
+  } else if (!isNameValid(name.value.trim())) {
+    displayError("Please use letters only", nameError, name);
 
     isValid = false;
   }
-  if (!isValidEmail(email.value.trim())) {
+  if (email.value.trim() === "") {
+    displayError("Email is Required", emailError, email);
+    isValid = false;
+  } else if (!isValidEmail(email.value.trim())) {
     displayError(
       "Email is required and must contain at least one or more digit and '@' sign.",
       emailError,
@@ -29,7 +35,10 @@ function formValidation() {
     );
     isValid = false;
   }
-  if (password.value.trim().length < 8) {
+  if (password.value.trim() === "") {
+    displayError("Password is Required", passwordError, password);
+    isValid = false;
+  } else if (password.value.trim().length < 8) {
     displayError("Password Must be 8 Character", passwordError, password);
     isValid = false;
   }
